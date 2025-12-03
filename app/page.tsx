@@ -359,26 +359,61 @@ export default function Home() {
           <div className="bg-[#181818] border-2 border-white rounded-lg overflow-hidden">
             <div className="flex flex-col lg:flex-row">
               <div className="lg:w-1/2 p-8 lg:p-12 text-white">
-                <p className="font-heading font-bold text-xl text-white mb-2">What is a token?</p>
+                <div className="flex items-center gap-2 mb-4">
+                  <img 
+                    src={atompropMark} 
+                    alt="" 
+                    style={{ width: '28px', height: '24px' }}
+                  />
+                  <p className="font-heading font-bold text-2xl text-white">What Is A Token?</p>
+                </div>
                 <div className="mb-6">
-                  <p className="font-body text-white/90 leading-relaxed mb-4">
-                    A token is a digital unit of ownership recorded on the blockchain. Each token represents a verified share of a real estate asset.
+                  <p className="font-body text-white/90 leading-relaxed mb-4 capitalize">
+                    A Token Is A Digital Unit Of Ownership Recorded On The Blockchain. Each Token Represents A Verified Share Of A Real Estate Asset.
                   </p>
-                  <p className="font-body text-white/90 leading-relaxed">
-                    For example, a property can be divided into hundreds or thousands of tokens, with each token reflecting a fractional portion of the total value. If you buy more tokens, you own a larger share — making real estate investment flexible, transparent, and accessible to everyone.
+                  <p className="font-body text-white/90 leading-relaxed capitalize">
+                    For Example, A Property Can Be Divided Into Hundreds Or Thousands Of Tokens, With Each Token Reflecting A Fractional Portion Of The Total Value. If You Buy More Tokens, You Own A Larger Share — Making Real Estate Investment Flexible, Transparent, And Accessible To Everyone.
                   </p>
                 </div>
                 <button className="btn-primary bg-gradient-to-r from-[#2e62af] to-[#902b8f]">
                   Begin Your Journey
                 </button>
               </div>
-              <div className="lg:w-1/2 relative min-h-[400px]">
-                {/* Decorative gradient circle */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-[350px] h-[350px] rounded-full bg-gradient-conic opacity-30 blur-2xl" />
-                </div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <img src={atompropLogo} alt="Atomprop" className="w-64 h-auto opacity-80" />
+              <div className="lg:w-1/2 flex items-center justify-center p-8">
+                {/* Blue Business Interface Card with gradient border */}
+                <div 
+                  className="flex flex-col justify-center items-center relative"
+                  style={{
+                    width: '432px',
+                    maxWidth: '100%',
+                    height: '438px',
+                    padding: '27px 52px 28px 51px',
+                    borderRadius: '10px',
+                    background: '#2268B3',
+                    position: 'relative'
+                  }}
+                >
+                  {/* Gradient border overlay */}
+                  <div 
+                    className="absolute inset-0 rounded-[10px] pointer-events-none"
+                    style={{
+                      background: 'linear-gradient(180deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.1) 100%)',
+                      padding: '3px',
+                      WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+                      WebkitMaskComposite: 'xor',
+                      maskComposite: 'exclude'
+                    }}
+                  />
+                  <div
+                    style={{
+                      width: '329px',
+                      maxWidth: '100%',
+                      height: '383px',
+                      flexShrink: 0,
+                      background: 'url(/images/businessman-interface.png) lightgray center / cover no-repeat',
+                      boxShadow: '0 4px 4px 0 rgba(0, 0, 0, 0.25)'
+                    }}
+                  />
                 </div>
               </div>
             </div>
