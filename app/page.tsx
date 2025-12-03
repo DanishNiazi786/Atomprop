@@ -25,6 +25,10 @@ import {
 // SVG Assets
 const atompropMark = "/images/atomprop-mark.svg";
 const arrowUpCircle = "/images/arrow-up-circle.svg";
+const groupIcon = "/images/group-1261156731.svg";
+const rightArrowUp = "/images/right-arrow-up.svg";
+const rightArrowBlue = "/images/right-arrow-blue.svg";
+const rightArrowPurple = "/images/right-arrow-purple.svg";
 
 // Actual assets from Figma design
 const heroImage = "/images/hero-image.png";
@@ -354,7 +358,7 @@ export default function Home() {
       </section>
 
       {/* Tokenization Section */}
-      <section className="py-20 bg-[#f5f5f5]">
+      <section className="pt-20 pb-8 bg-[#f5f5f5]">
         <div className="container-main">
           <div className="bg-[#181818] border-2 border-white rounded-lg overflow-hidden">
             <div className="flex flex-col lg:flex-row">
@@ -404,14 +408,15 @@ export default function Home() {
                       maskComposite: 'exclude'
                     }}
                   />
-                  <div
+                  <img
+                    src="/images/businessman-interface.png"
+                    alt="Business Interface"
                     style={{
                       width: '329px',
                       maxWidth: '100%',
                       height: '383px',
                       flexShrink: 0,
-                      background: 'url(/images/businessman-interface.png) lightgray center / cover no-repeat',
-                      boxShadow: '0 4px 4px 0 rgba(0, 0, 0, 0.25)'
+                      objectFit: 'cover'
                     }}
                   />
                 </div>
@@ -419,20 +424,19 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="text-center mt-20">
-            <h2 className="font-heading font-bold text-3xl lg:text-4xl text-black mb-4">
-              Tokenization at a Glance
-            </h2>
-            <p className="font-body text-[rgba(24,35,40,0.8)] max-w-[1200px] mx-auto leading-relaxed">
-              Real estate tokenization converts physical property ownership into secure digital tokens recorded on the blockchain. Each token represents a fractional share of the real asset, allowing investors to participate with ease and transparency.
-            </p>
-          </div>
         </div>
       </section>
 
       {/* How It Works Section */}
-      <section id="how-it-works" className="py-20 bg-[#f5f5f5]">
+      <section id="how-it-works" className="pt-8 pb-20 bg-[#f5f5f5]">
         <div className="container-main text-center">
+          <div className="flex justify-center mb-4">
+            <img 
+              src={groupIcon} 
+              alt="" 
+              style={{ width: '36.386px', height: '32px' }}
+            />
+          </div>
           <p className="font-heading font-bold text-[#355eac] text-2xl mb-2">
             A Simple, Transparent Investing Experience
           </p>
@@ -440,37 +444,128 @@ export default function Home() {
             How Atomprop Works
           </h2>
 
-          {/* Process Steps Visual */}
-          <div className="flex flex-wrap justify-center gap-8 mb-16">
-            <div className="text-center max-w-[300px]">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 flex items-center justify-center text-white font-bold text-xl">1</div>
-              <p className="font-body text-[rgba(0,0,0,0.8)] leading-relaxed">
-                Explore verified property projects with transparent details and construction progress.
-              </p>
-              <p className="font-heading font-bold text-xl mt-4">Browse tokenized<br />real estate</p>
-              <img src={arrowUpCircle} alt="" className="w-9 h-9 mx-auto mt-4 rotate-90" />
-            </div>
-            <div className="hidden lg:flex items-center">
-              <ArrowRight className="w-8 h-8 text-purple-500" />
-            </div>
-            <div className="text-center max-w-[300px]">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 flex items-center justify-center text-white font-bold text-xl">2</div>
-              <p className="font-body text-[rgba(0,0,0,0.8)] leading-relaxed">
-                Select your investment amount and purchase tokens representing fractional ownership.
-              </p>
-              <p className="font-heading font-bold text-xl mt-4">Purchase fractional<br />tokens</p>
-              <img src={arrowUpCircle} alt="" className="w-9 h-9 mx-auto mt-4 rotate-[-90deg]" />
-            </div>
-            <div className="hidden lg:flex items-center">
-              <ArrowRight className="w-8 h-8 text-purple-500" />
-            </div>
-            <div className="text-center max-w-[300px]">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 flex items-center justify-center text-white font-bold text-xl">3</div>
-              <p className="font-body text-[rgba(0,0,0,0.8)] leading-relaxed">
-                Track your investments and receive returns through your portfolio dashboard.
-              </p>
-              <p className="font-heading font-bold text-xl mt-4">Earn & manage<br />your portfolio</p>
-              <img src={arrowUpCircle} alt="" className="w-9 h-9 mx-auto mt-4 rotate-90" />
+          {/* Process Steps Visual - Wave Flow */}
+          <div 
+            className="relative mx-auto mb-16 overflow-x-auto overflow-y-visible"
+            style={{ 
+              width: '100%',
+              maxWidth: '1578px',
+              minHeight: '319px'
+            }}
+          >
+            {/* Wave Flow Container */}
+            <div className="relative w-full flex items-end" style={{ height: '319px', width: '1578px', maxWidth: '100%' }}>
+              {/* Element 1 - Blue Semi-circle (Down) */}
+              <div className="relative flex-shrink-0" style={{ width: '313.758px', height: '203.748px' }}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="313.758" height="203.748" viewBox="0 0 314 206" fill="none" className="absolute bottom-0 left-0">
+                  <path d="M152.967 205.201C112.546 205.158 73.781 189.141 45.1259 160.644C16.4708 132.146 0.249766 93.4801 0 53.0765C0 49.6922 0 56.5239 0 0H313.947C308.476 16.8858 305.798 34.5508 306.019 52.2988C305.969 92.8502 289.825 131.725 261.131 160.392C232.436 189.058 193.536 205.173 152.967 205.201Z" fill="#345EAD"/>
+                </svg>
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-4 z-10">
+                  <p className="font-heading font-bold text-xl lg:text-2xl text-center leading-tight mb-4 whitespace-pre-line">
+                    {`Browse tokenized `}
+                    {`real estate`}
+                  </p>
+                  <div className="absolute bottom-8">
+                    <div className="w-9 h-9 rounded-full flex items-center justify-center" style={{ backgroundColor: '#345EAD' }}>
+                      <img src={rightArrowUp} alt="" className="w-9 h-9" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Element 2 - Purple Semi-circle (Up) */}
+              <div className="relative flex-shrink-0" style={{ width: '321.602px', height: '202.047px' }}>
+                <p className="absolute -top-16 left-1/2 -translate-x-1/2 font-body text-base lg:text-[18px] text-[rgba(0,0,0,0.8)] text-center capitalize w-[90%] max-w-[350px] leading-[1.8] z-20">
+                  Explore verified property projects with transparent details and construction progress.
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="321.602" height="202.047" viewBox="0 0 322 203" fill="none" className="absolute top-0 left-0">
+                  <path style={{ mixBlendMode: 'multiply' }} opacity="0.5" d="M0 202.047C5.4597 185.157 8.15808 167.497 7.99115 149.748C8.82089 109.816 25.2471 71.7932 53.7576 43.8095C82.2681 15.8258 120.6 0.10209 160.557 0.000495382C200.515 -0.101099 238.926 15.4274 267.579 43.2658C296.231 71.1042 312.851 109.043 313.884 148.97C313.358 166.976 315.969 184.936 321.602 202.047H0Z" fill="url(#paint0_linear_1_1386_2)"/>
+                  <defs>
+                    <linearGradient id="paint0_linear_1_1386_2" x1="-2.09179e-07" y1="99.4251" x2="286.614" y2="109" gradientUnits="userSpaceOnUse">
+                      <stop offset="0.0744296" stopColor="#595858"/>
+                      <stop offset="0.18" stopColor="#932A8E"/>
+                      <stop offset="0.83" stopColor="#932A8E"/>
+                      <stop offset="1" stopColor="#595858"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-4 pt-16 z-10">
+                  <p className="font-heading font-bold text-xl lg:text-2xl text-center leading-tight mb-4 whitespace-pre-line">
+                    {`Purchase fractional `}
+                    {`tokens`}
+                  </p>
+                  <div className="absolute top-8">
+                    <div className="w-9 h-9 rounded-full flex items-center justify-center" style={{ backgroundColor: '#932A8E' }}>
+                      <img src={rightArrowUp} alt="" className="w-9 h-9" style={{ transform: 'rotate(180deg)' }} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Element 3 - Blue Semi-circle (Down) */}
+              <div className="relative flex-shrink-0" style={{ width: '313.758px', height: '203.748px' }}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="313.758" height="203.748" viewBox="0 0 314 206" fill="none" className="absolute bottom-0 left-0">
+                  <path d="M152.967 205.201C112.546 205.158 73.781 189.141 45.1259 160.644C16.4708 132.146 0.249766 93.4801 0 53.0765C0 49.6922 0 56.5239 0 0H313.947C308.476 16.8858 305.798 34.5508 306.019 52.2988C305.969 92.8502 289.825 131.725 261.131 160.392C232.436 189.058 193.536 205.173 152.967 205.201Z" fill="#345EAD"/>
+                </svg>
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-4 z-10">
+                  <p className="font-heading font-bold text-xl lg:text-2xl text-center leading-tight mb-4 whitespace-pre-line">
+                    {`Browse tokenized `}
+                    {`real estate`}
+                  </p>
+                  <div className="absolute bottom-8">
+                    <div className="w-9 h-9 rounded-full flex items-center justify-center" style={{ backgroundColor: '#345EAD' }}>
+                      <img src={rightArrowUp} alt="" className="w-9 h-9" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Element 4 - Purple Semi-circle (Up) */}
+              <div className="relative flex-shrink-0" style={{ width: '321.602px', height: '202.047px' }}>
+                <p className="absolute -top-16 left-1/2 -translate-x-1/2 font-body text-base lg:text-[18px] text-[rgba(0,0,0,0.8)] text-center capitalize w-[90%] max-w-[350px] leading-[1.8] z-20">
+                  Explore verified property projects with transparent details and construction progress.
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="321.602" height="202.047" viewBox="0 0 322 203" fill="none" className="absolute top-0 left-0">
+                  <path style={{ mixBlendMode: 'multiply' }} opacity="0.5" d="M0 202.047C5.4597 185.157 8.15808 167.497 7.99115 149.748C8.82089 109.816 25.2471 71.7932 53.7576 43.8095C82.2681 15.8258 120.6 0.10209 160.557 0.000495382C200.515 -0.101099 238.926 15.4274 267.579 43.2658C296.231 71.1042 312.851 109.043 313.884 148.97C313.358 166.976 315.969 184.936 321.602 202.047H0Z" fill="url(#paint0_linear_1_1386_4)"/>
+                  <defs>
+                    <linearGradient id="paint0_linear_1_1386_4" x1="-2.09179e-07" y1="99.4251" x2="286.614" y2="109" gradientUnits="userSpaceOnUse">
+                      <stop offset="0.0744296" stopColor="#595858"/>
+                      <stop offset="0.18" stopColor="#932A8E"/>
+                      <stop offset="0.83" stopColor="#932A8E"/>
+                      <stop offset="1" stopColor="#595858"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-4 pt-16 z-10">
+                  <p className="font-heading font-bold text-xl lg:text-2xl text-center leading-tight mb-4 whitespace-pre-line">
+                    {`Purchase fractional `}
+                    {`tokens`}
+                  </p>
+                  <div className="absolute top-8">
+                    <div className="w-9 h-9 rounded-full flex items-center justify-center" style={{ backgroundColor: '#932A8E' }}>
+                      <img src={rightArrowUp} alt="" className="w-9 h-9" style={{ transform: 'rotate(180deg)' }} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Element 5 - Blue Semi-circle (Down) */}
+              <div className="relative flex-shrink-0" style={{ width: '313.758px', height: '203.748px' }}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="313.758" height="203.748" viewBox="0 0 314 206" fill="none" className="absolute bottom-0 left-0">
+                  <path d="M152.967 205.201C112.546 205.158 73.781 189.141 45.1259 160.644C16.4708 132.146 0.249766 93.4801 0 53.0765C0 49.6922 0 56.5239 0 0H313.947C308.476 16.8858 305.798 34.5508 306.019 52.2988C305.969 92.8502 289.825 131.725 261.131 160.392C232.436 189.058 193.536 205.173 152.967 205.201Z" fill="#345EAD"/>
+                </svg>
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-4 z-10">
+                  <p className="font-heading font-bold text-xl lg:text-2xl text-center leading-tight mb-4 whitespace-pre-line">
+                    {`Browse tokenized `}
+                    {`real estate`}
+                  </p>
+                  <div className="absolute bottom-8">
+                    <div className="w-9 h-9 rounded-full flex items-center justify-center" style={{ backgroundColor: '#345EAD' }}>
+                      <img src={rightArrowUp} alt="" className="w-9 h-9" />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
