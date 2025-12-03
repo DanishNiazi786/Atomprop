@@ -219,7 +219,7 @@ export default function Home() {
       </section>
 
       {/* Pricing Model Section */}
-      <section id="about" className="pt-32 pb-20 bg-[#f5f5f5]">
+      <section id="about" className="pt-12 pb-10 bg-[#f5f5f5]">
         <div className="container-main">
           <div className="flex flex-col lg:flex-row gap-16">
             {/* Left Content */}
@@ -301,9 +301,16 @@ export default function Home() {
       </section>
 
       {/* Properties Section */}
-      <section id="properties" className="py-20 bg-[#f5f5f5]">
+      <section id="properties" className="py-10 bg-[#f5f5f5]">
         <div className="container-main">
           <div className="text-center mb-12">
+            <div className="flex justify-center mb-4">
+              <img 
+                src={groupIcon} 
+                alt="" 
+                style={{ width: '36.386px', height: '32px' }}
+              />
+            </div>
             <h2 className="font-heading font-bold text-3xl lg:text-4xl text-black mb-4">
               Discover Secure, Fractional<br />Real Estate Opportunities
             </h2>
@@ -358,7 +365,7 @@ export default function Home() {
       </section>
 
       {/* Tokenization Section */}
-      <section className="pt-20 pb-8 bg-[#f5f5f5]">
+      <section className="pt-10 pb-4 bg-[#f5f5f5]">
         <div className="container-main">
           <div className="bg-[#181818] border-2 border-white rounded-lg overflow-hidden">
             <div className="flex flex-col lg:flex-row">
@@ -428,7 +435,7 @@ export default function Home() {
       </section>
 
       {/* How It Works Section */}
-      <section id="how-it-works" className="pt-8 pb-20 bg-[#f5f5f5]">
+      <section id="how-it-works" className="pt-4 pb-10 bg-[#f5f5f5]">
         <div className="container-main text-center">
           <div className="flex justify-center mb-4">
             <img 
@@ -572,7 +579,7 @@ export default function Home() {
       </section>
 
       {/* Detailed Process Section */}
-      <section className="py-20 bg-[#181818]">
+      <section className="py-10 bg-[#181818]">
         <div className="container-main">
           {/* Atomprop Logo in center */}
           <div className="flex justify-center mb-16">
@@ -598,7 +605,7 @@ export default function Home() {
       </section>
 
       {/* Buying, Selling & Trading Section */}
-      <section className="py-20 bg-[#f5f5f5]">
+      <section className="py-10 bg-[#f5f5f5]">
         <div className="container-main">
           <p className="font-heading font-bold text-[#3061ae] text-xl mb-2">
             A Simple, Transparent Investing Experience
@@ -642,7 +649,7 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-[#0c091d]">
+      <section className="py-10 bg-[#0c091d]">
         <div className="container-main">
           <div className="flex flex-col lg:flex-row gap-16 mb-16">
             <div className="lg:w-1/2">
@@ -693,7 +700,7 @@ export default function Home() {
       </section>
 
       {/* Platform Features Section */}
-      <section className="py-20 bg-[#0c091d]">
+      <section className="py-10 bg-[#0c091d]">
         <div className="container-main text-center">
           <p className="font-heading font-bold text-white text-xl mb-2">
             Everything You Need to Grow Your Property Portfolio — Digitally
@@ -769,7 +776,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-[#0c091d]">
+      <section className="py-10 bg-[#0c091d]">
         <div className="container-main">
           <div className="border-2 border-white rounded-lg p-8 lg:p-12 flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2">
