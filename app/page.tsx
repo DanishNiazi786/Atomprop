@@ -77,11 +77,18 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#f5f5f5] overflow-x-hidden">
       {/* Hero Section */}
-      <section className="relative min-h-[938px] bg-cover bg-center overflow-hidden">
+      <section className="relative bg-cover bg-center overflow-hidden" style={{ minHeight: '934px' }}>
         {/* Background */}
         <div className="absolute inset-0">
           <img src={heroBg} alt="" className="absolute inset-0 w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-[rgba(0,0,0,0.86)]" />
+          <div 
+            className="absolute left-0 top-[4px]"
+            style={{
+              width: '1920px',
+              height: '934px',
+              background: 'rgba(0, 0, 0, 0.86)'
+            }}
+          />
           {/* Main gradient orb - exact Figma specs */}
           <div 
             className="absolute left-1/2 -translate-x-1/2"
@@ -167,8 +174,20 @@ export default function Home() {
         </div>
 
         {/* Stats Bar */}
-        <div className="relative z-10 mx-8 lg:mx-20 mb-[-60px]">
-          <div className="bg-black border-2 border-white rounded-[20px] p-8 grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="relative z-10 flex justify-center mb-[-60px]">
+          <div 
+            className="grid grid-cols-2 md:grid-cols-4 gap-8 p-8"
+            style={{
+              width: '1356px',
+              maxWidth: '95%',
+              height: 'auto',
+              minHeight: '221px',
+              borderRadius: '20px',
+              border: '2px solid #FFF',
+              background: '#000',
+              boxShadow: '0 0 15px 0 rgba(0, 0, 0, 0.25)'
+            }}
+          >
             <div className="text-center">
               <p className="font-heading font-bold text-2xl lg:text-3xl gradient-text">PKR 500,000</p>
               <p className="font-body font-light text-white/80 text-sm">Successful transactions</p>
@@ -201,9 +220,16 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row gap-16">
             {/* Left Content */}
             <div className="lg:w-1/2">
-              <p className="font-heading font-bold text-[#3061ae] text-xl mb-2">
-                A Simple, Transparent
-              </p>
+              <div className="flex items-center gap-2 mb-2">
+                <img 
+                  src={atompropMark} 
+                  alt="" 
+                  style={{ width: '36.386px', height: '32px' }}
+                />
+                <p className="font-heading font-bold text-[#3061ae] text-xl">
+                  A Simple, Transparent
+                </p>
+              </div>
               <h2 className="font-heading font-bold text-3xl lg:text-4xl text-black leading-tight mb-6">
                 Atomprop Smart Construction-Stage<br />Pricing Model
               </h2>
@@ -221,19 +247,46 @@ export default function Home() {
                 {/* Glow effect */}
                 <div className="absolute -inset-4 bg-purple-500/20 rounded-lg blur-xl" />
                 
-                <div className="relative bg-gradient-to-b from-[#130f23] to-[#0b071b] border-4 border-white rounded-lg p-6 w-full max-w-[500px]">
-                  <Quote className="w-6 h-6 text-white/50 mb-4" />
-                  <p className="font-body text-white leading-relaxed mb-4">
-                    At Atomprop, our mission is to democratize real estate through technology.
-                    We believe everyone deserves access to secure, transparent, and rewarding property investment.
-                  </p>
-                  <Quote className="w-6 h-6 text-white/50 rotate-180 ml-auto" />
-                  
-                  <div className="flex items-center gap-3 mt-6">
-                    <div className="w-10 h-10 rounded-full bg-gradient-to-r from-purple-500 to-blue-500" />
-                    <div>
-                      <p className="font-heading font-bold text-white text-sm">Faizan Faiz</p>
-                      <p className="font-heading text-white/60 text-xs">Owner</p>
+                <div 
+                  className="relative"
+                  style={{
+                    width: '566px',
+                    maxWidth: '100%',
+                    height: '343px',
+                    borderRadius: '10px',
+                    border: '5px solid #FFF',
+                    background: 'linear-gradient(180deg, #130F23 0%, #0B071B 65.625%)',
+                    padding: '20px'
+                  }}
+                >
+                  {/* Inner gradient content area */}
+                  <div
+                    className="relative p-6"
+                    style={{
+                      width: '526px',
+                      maxWidth: '100%',
+                      height: '303px',
+                      borderRadius: '5px',
+                      background: 'linear-gradient(90deg, #325EAE 0.12%, #853293 99.88%)'
+                    }}
+                  >
+                    <Quote className="w-6 h-6 text-white/50 mb-4" />
+                    <p className="font-body text-white leading-relaxed mb-4 capitalize">
+                      At Atomprop, Our Mission Is To Democratize Real Estate Through Technology.
+                      <br />
+                      We Believe Everyone Deserves Access To Secure, Transparent, And Rewarding Property Investment.
+                    </p>
+                    <Quote className="w-6 h-6 text-white/50 rotate-180 ml-auto" />
+                    
+                    <div className="flex items-center gap-3 absolute bottom-6 left-6">
+                      <div 
+                        className="rounded-full bg-[#D9D9D9]"
+                        style={{ width: '39px', height: '39px' }}
+                      />
+                      <div>
+                        <p className="font-heading font-bold text-white text-[16.17px] capitalize">Faizan Faiz</p>
+                        <p className="font-heading text-white text-[14.17px] capitalize">Owner</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -268,7 +321,17 @@ export default function Home() {
                   <button className="absolute top-4 right-4 w-8 h-8 bg-white/20 backdrop-blur rounded-full flex items-center justify-center hover:bg-white/40 transition">
                     <HeartIcon className="w-4 h-4 text-white" />
                   </button>
-                  <div className="absolute top-4 left-4 w-6 h-6 rounded-full bg-green-500" />
+                  {/* Atomprop Mark with white background */}
+                  <div 
+                    className="absolute top-[10px] left-[10px] rounded-full bg-white flex items-center justify-center"
+                    style={{ width: '25px', height: '25px' }}
+                  >
+                    <img 
+                      src={atompropMark} 
+                      alt="" 
+                      style={{ width: '16px', height: '14px' }}
+                    />
+                  </div>
                 </div>
                 <div className="p-6 text-center">
                   <h3 className="font-heading font-bold text-xl text-black tracking-tight">Hill States</h3>
