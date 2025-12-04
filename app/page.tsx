@@ -305,11 +305,43 @@ export default function Home() {
         <div className="container-main">
           <div className="text-center mb-12">
             <div className="flex justify-center mb-4">
-              <img 
-                src={groupIcon} 
-                alt="" 
-                style={{ width: '36.386px', height: '32px' }}
-              />
+              <svg xmlns="http://www.w3.org/2000/svg" width="36.386" height="32" viewBox="0 0 37 32" fill="none" style={{ width: '36.386px', height: '32px' }}>
+                <path d="M21.2127 3.22763C20.1234 1.4451 17.7957 0.88287 16.0138 1.97184C14.2319 3.06082 13.6704 5.38863 14.7598 7.17115L27.9608 28.7725C29.0502 30.5551 31.3778 31.1173 33.1597 30.0283C34.9417 28.9393 35.5031 26.6115 34.4138 24.829L21.2127 3.22763Z" fill="url(#paint0_linear_1_1430)"/>
+                <path d="M21.3102 25.1488C21.0996 24.7226 20.8484 24.3117 20.5998 23.9058L15.0339 14.816C14.5721 14.055 14.0952 13.2939 13.4102 12.7231C12.6496 12.1359 11.7088 11.8309 10.7483 11.8601C9.78786 11.8892 8.86727 12.2507 8.14363 12.8829C7.67428 13.3505 7.26829 13.8776 6.93606 14.4507C6.31705 15.4333 5.72511 16.4337 5.16023 17.4519C4.14546 19.3165 3.51885 21.1887 4.14546 23.2868C4.40664 24.1679 4.84031 24.9883 5.42128 25.7003C6.00225 26.4124 6.71894 27.0019 7.52969 27.4346L7.5779 27.46C9.01378 28.1881 10.6577 28.3834 12.1443 28.9999C14.0318 29.7787 15.7391 31.2501 17.7813 31.2425C18.4523 31.2359 19.1117 31.067 19.7032 30.7502C20.2947 30.4335 20.8008 29.9783 21.1782 29.4235C21.7484 28.5559 21.9628 27.5021 21.777 26.4807C21.6834 26.0174 21.5263 25.5692 21.3102 25.1488Z" fill="url(#paint1_linear_1_1430)"/>
+                <path d="M2.45073 22.0059C1.79621 23.0037 1.19243 24.0303 0.639381 25.0857C0.162443 25.9939 -0.12169 26.8843 0.0508196 27.9168C0.219847 28.9393 0.774944 29.8578 1.60154 30.4828C2.42814 31.1078 3.46315 31.3917 4.49294 31.2757C5.98718 31.1057 7.24802 30.1366 8.6357 29.5633C7.002 28.9739 5.53713 27.9942 4.36863 26.7093C3.19872 25.4142 2.52004 23.7498 2.45073 22.0059Z" fill="url(#paint2_linear_1_1430)"/>
+                <defs>
+                  <linearGradient id="paint0_linear_1_1430" x1="19.782" y1="-7.44527" x2="27.035" y2="27.9623" gradientUnits="userSpaceOnUse">
+                    <stop stopColor="#CCE0F4"/>
+                    <stop offset="0.18" stopColor="#7AB0DB"/>
+                    <stop offset="0.35" stopColor="#2F83C3"/>
+                    <stop offset="0.43" stopColor="#1172BA"/>
+                    <stop offset="0.62" stopColor="#4555A8"/>
+                    <stop offset="0.79" stopColor="#6F3E9A"/>
+                    <stop offset="0.92" stopColor="#892F91"/>
+                    <stop offset="1" stopColor="#932A8E"/>
+                  </linearGradient>
+                  <linearGradient id="paint1_linear_1_1430" x1="6.8701" y1="-4.80186" x2="14.1256" y2="30.6083" gradientUnits="userSpaceOnUse">
+                    <stop stopColor="#CCE0F4"/>
+                    <stop offset="0.18" stopColor="#7AB0DB"/>
+                    <stop offset="0.35" stopColor="#2F83C3"/>
+                    <stop offset="0.43" stopColor="#1172BA"/>
+                    <stop offset="0.62" stopColor="#4555A8"/>
+                    <stop offset="0.79" stopColor="#6F3E9A"/>
+                    <stop offset="0.92" stopColor="#892F91"/>
+                    <stop offset="1" stopColor="#932A8E"/>
+                  </linearGradient>
+                  <linearGradient id="paint2_linear_1_1430" x1="-2.15121" y1="-2.95221" x2="5.10434" y2="32.4554" gradientUnits="userSpaceOnUse">
+                    <stop stopColor="#CCE0F4"/>
+                    <stop offset="0.18" stopColor="#7AB0DB"/>
+                    <stop offset="0.35" stopColor="#2F83C3"/>
+                    <stop offset="0.43" stopColor="#1172BA"/>
+                    <stop offset="0.62" stopColor="#4555A8"/>
+                    <stop offset="0.79" stopColor="#6F3E9A"/>
+                    <stop offset="0.92" stopColor="#892F91"/>
+                    <stop offset="1" stopColor="#932A8E"/>
+                  </linearGradient>
+                </defs>
+              </svg>
             </div>
             <h2 className="font-heading font-bold text-3xl lg:text-4xl text-black mb-4">
               Discover Secure, Fractional<br />Real Estate Opportunities
@@ -438,11 +470,43 @@ export default function Home() {
       <section id="how-it-works" className="pt-4 pb-10 bg-[#f5f5f5]">
         <div className="container-main text-center">
           <div className="flex justify-center mb-4">
-            <img 
-              src={groupIcon} 
-              alt="" 
-              style={{ width: '36.386px', height: '32px' }}
-            />
+            <svg xmlns="http://www.w3.org/2000/svg" width="36.386" height="32" viewBox="0 0 37 32" fill="none" style={{ width: '36.386px', height: '32px' }}>
+              <path d="M21.2127 3.22763C20.1234 1.4451 17.7957 0.88287 16.0138 1.97184C14.2319 3.06082 13.6704 5.38863 14.7598 7.17115L27.9608 28.7725C29.0502 30.5551 31.3778 31.1173 33.1597 30.0283C34.9417 28.9393 35.5031 26.6115 34.4138 24.829L21.2127 3.22763Z" fill="url(#paint0_linear_1_1430_2)"/>
+              <path d="M21.3102 25.1488C21.0996 24.7226 20.8484 24.3117 20.5998 23.9058L15.0339 14.816C14.5721 14.055 14.0952 13.2939 13.4102 12.7231C12.6496 12.1359 11.7088 11.8309 10.7483 11.8601C9.78786 11.8892 8.86727 12.2507 8.14363 12.8829C7.67428 13.3505 7.26829 13.8776 6.93606 14.4507C6.31705 15.4333 5.72511 16.4337 5.16023 17.4519C4.14546 19.3165 3.51885 21.1887 4.14546 23.2868C4.40664 24.1679 4.84031 24.9883 5.42128 25.7003C6.00225 26.4124 6.71894 27.0019 7.52969 27.4346L7.5779 27.46C9.01378 28.1881 10.6577 28.3834 12.1443 28.9999C14.0318 29.7787 15.7391 31.2501 17.7813 31.2425C18.4523 31.2359 19.1117 31.067 19.7032 30.7502C20.2947 30.4335 20.8008 29.9783 21.1782 29.4235C21.7484 28.5559 21.9628 27.5021 21.777 26.4807C21.6834 26.0174 21.5263 25.5692 21.3102 25.1488Z" fill="url(#paint1_linear_1_1430_2)"/>
+              <path d="M2.45073 22.0059C1.79621 23.0037 1.19243 24.0303 0.639381 25.0857C0.162443 25.9939 -0.12169 26.8843 0.0508196 27.9168C0.219847 28.9393 0.774944 29.8578 1.60154 30.4828C2.42814 31.1078 3.46315 31.3917 4.49294 31.2757C5.98718 31.1057 7.24802 30.1366 8.6357 29.5633C7.002 28.9739 5.53713 27.9942 4.36863 26.7093C3.19872 25.4142 2.52004 23.7498 2.45073 22.0059Z" fill="url(#paint2_linear_1_1430_2)"/>
+              <defs>
+                <linearGradient id="paint0_linear_1_1430_2" x1="19.782" y1="-7.44527" x2="27.035" y2="27.9623" gradientUnits="userSpaceOnUse">
+                  <stop stopColor="#CCE0F4"/>
+                  <stop offset="0.18" stopColor="#7AB0DB"/>
+                  <stop offset="0.35" stopColor="#2F83C3"/>
+                  <stop offset="0.43" stopColor="#1172BA"/>
+                  <stop offset="0.62" stopColor="#4555A8"/>
+                  <stop offset="0.79" stopColor="#6F3E9A"/>
+                  <stop offset="0.92" stopColor="#892F91"/>
+                  <stop offset="1" stopColor="#932A8E"/>
+                </linearGradient>
+                <linearGradient id="paint1_linear_1_1430_2" x1="6.8701" y1="-4.80186" x2="14.1256" y2="30.6083" gradientUnits="userSpaceOnUse">
+                  <stop stopColor="#CCE0F4"/>
+                  <stop offset="0.18" stopColor="#7AB0DB"/>
+                  <stop offset="0.35" stopColor="#2F83C3"/>
+                  <stop offset="0.43" stopColor="#1172BA"/>
+                  <stop offset="0.62" stopColor="#4555A8"/>
+                  <stop offset="0.79" stopColor="#6F3E9A"/>
+                  <stop offset="0.92" stopColor="#892F91"/>
+                  <stop offset="1" stopColor="#932A8E"/>
+                </linearGradient>
+                <linearGradient id="paint2_linear_1_1430_2" x1="-2.15121" y1="-2.95221" x2="5.10434" y2="32.4554" gradientUnits="userSpaceOnUse">
+                  <stop stopColor="#CCE0F4"/>
+                  <stop offset="0.18" stopColor="#7AB0DB"/>
+                  <stop offset="0.35" stopColor="#2F83C3"/>
+                  <stop offset="0.43" stopColor="#1172BA"/>
+                  <stop offset="0.62" stopColor="#4555A8"/>
+                  <stop offset="0.79" stopColor="#6F3E9A"/>
+                  <stop offset="0.92" stopColor="#892F91"/>
+                  <stop offset="1" stopColor="#932A8E"/>
+                </linearGradient>
+              </defs>
+            </svg>
           </div>
           <p className="font-heading font-bold text-[#355eac] text-2xl mb-2">
             A Simple, Transparent Investing Experience
