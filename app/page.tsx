@@ -453,15 +453,15 @@ export default function Home() {
 
           {/* Process Steps Visual - Wave Flow */}
           <div 
-            className="relative mx-auto mb-16 overflow-x-auto overflow-y-visible"
+            className="relative mx-auto mb-16 overflow-x-hidden overflow-y-visible"
             style={{ 
               width: '100%',
-              maxWidth: '1578px',
-              minHeight: '319px'
+              maxWidth: '100%',
+              minHeight: '260px'
             }}
           >
             {/* Wave Flow Container */}
-            <div className="relative w-full flex items-end" style={{ height: '319px', width: '1578px', maxWidth: '100%' }}>
+            <div className="relative w-full flex items-end justify-center" style={{ height: '260px', width: '100%', transform: 'scale(0.80)', transformOrigin: 'center' }}>
               {/* Element 1 - Blue Semi-circle (Down) */}
               <div className="relative flex-shrink-0" style={{ width: '313.758px', height: '203.748px' }}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="313.758" height="203.748" viewBox="0 0 314 206" fill="none" className="absolute bottom-0 left-0">
@@ -482,9 +482,6 @@ export default function Home() {
 
               {/* Element 2 - Purple Semi-circle (Up) */}
               <div className="relative flex-shrink-0" style={{ width: '321.602px', height: '202.047px' }}>
-                <p className="absolute -top-16 left-1/2 -translate-x-1/2 font-body text-base lg:text-[18px] text-[rgba(0,0,0,0.8)] text-center capitalize w-[90%] max-w-[350px] leading-[1.8] z-20">
-                  Explore verified property projects with transparent details and construction progress.
-                </p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="321.602" height="202.047" viewBox="0 0 322 203" fill="none" className="absolute top-0 left-0">
                   <path style={{ mixBlendMode: 'multiply' }} opacity="0.5" d="M0 202.047C5.4597 185.157 8.15808 167.497 7.99115 149.748C8.82089 109.816 25.2471 71.7932 53.7576 43.8095C82.2681 15.8258 120.6 0.10209 160.557 0.000495382C200.515 -0.101099 238.926 15.4274 267.579 43.2658C296.231 71.1042 312.851 109.043 313.884 148.97C313.358 166.976 315.969 184.936 321.602 202.047H0Z" fill="url(#paint0_linear_1_1386_2)"/>
                   <defs>
@@ -510,9 +507,12 @@ export default function Home() {
               </div>
 
               {/* Element 3 - Blue Semi-circle (Down) */}
-              <div className="relative flex-shrink-0" style={{ width: '313.758px', height: '203.748px' }}>
-                <svg xmlns="http://www.w3.org/2000/svg" width="313.758" height="203.748" viewBox="0 0 314 206" fill="none" className="absolute bottom-0 left-0">
-                  <path d="M152.967 205.201C112.546 205.158 73.781 189.141 45.1259 160.644C16.4708 132.146 0.249766 93.4801 0 53.0765C0 49.6922 0 56.5239 0 0H313.947C308.476 16.8858 305.798 34.5508 306.019 52.2988C305.969 92.8502 289.825 131.725 261.131 160.392C232.436 189.058 193.536 205.173 152.967 205.201Z" fill="#345EAD"/>
+              <div className="relative flex-shrink-0" style={{ width: '322px', height: '206px' }}>
+                <p className="absolute -top-16 left-1/2 -translate-x-1/2 font-body text-base lg:text-[18px] text-[rgba(0,0,0,0.8)] text-center capitalize w-[90%] max-w-[350px] leading-[1.8] z-20">
+                  Explore verified property projects with transparent details and construction progress.
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="322" height="206" viewBox="0 0 322 206" fill="none" className="absolute bottom-0 left-0">
+                  <path d="M160.685 205.201C120.229 205.157 81.4336 189.115 52.7698 160.578C24.1059 132.04 7.90225 93.3257 7.69674 52.8874C8.21477 34.9457 5.61046 17.0505 0 0H321.56C316.023 16.8703 313.343 34.5463 313.632 52.2988C313.587 92.8337 297.459 131.696 268.787 160.361C240.114 189.025 201.237 205.151 160.685 205.201Z" fill="#345EAD"/>
                 </svg>
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-4 z-10">
                   <p className="font-heading font-bold text-xl lg:text-2xl text-center leading-tight mb-4 whitespace-pre-line">
@@ -529,9 +529,6 @@ export default function Home() {
 
               {/* Element 4 - Purple Semi-circle (Up) */}
               <div className="relative flex-shrink-0" style={{ width: '321.602px', height: '202.047px' }}>
-                <p className="absolute -top-16 left-1/2 -translate-x-1/2 font-body text-base lg:text-[18px] text-[rgba(0,0,0,0.8)] text-center capitalize w-[90%] max-w-[350px] leading-[1.8] z-20">
-                  Explore verified property projects with transparent details and construction progress.
-                </p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="321.602" height="202.047" viewBox="0 0 322 203" fill="none" className="absolute top-0 left-0">
                   <path style={{ mixBlendMode: 'multiply' }} opacity="0.5" d="M0 202.047C5.4597 185.157 8.15808 167.497 7.99115 149.748C8.82089 109.816 25.2471 71.7932 53.7576 43.8095C82.2681 15.8258 120.6 0.10209 160.557 0.000495382C200.515 -0.101099 238.926 15.4274 267.579 43.2658C296.231 71.1042 312.851 109.043 313.884 148.97C313.358 166.976 315.969 184.936 321.602 202.047H0Z" fill="url(#paint0_linear_1_1386_4)"/>
                   <defs>
@@ -557,9 +554,12 @@ export default function Home() {
               </div>
 
               {/* Element 5 - Blue Semi-circle (Down) */}
-              <div className="relative flex-shrink-0" style={{ width: '313.758px', height: '203.748px' }}>
-                <svg xmlns="http://www.w3.org/2000/svg" width="313.758" height="203.748" viewBox="0 0 314 206" fill="none" className="absolute bottom-0 left-0">
-                  <path d="M152.967 205.201C112.546 205.158 73.781 189.141 45.1259 160.644C16.4708 132.146 0.249766 93.4801 0 53.0765C0 49.6922 0 56.5239 0 0H313.947C308.476 16.8858 305.798 34.5508 306.019 52.2988C305.969 92.8502 289.825 131.725 261.131 160.392C232.436 189.058 193.536 205.173 152.967 205.201Z" fill="#345EAD"/>
+              <div className="relative flex-shrink-0" style={{ width: '314px', height: '204px' }}>
+                <p className="absolute -top-16 left-1/2 -translate-x-1/2 font-body text-base lg:text-[18px] text-[rgba(0,0,0,0.8)] text-center capitalize w-[90%] max-w-[350px] leading-[1.8] z-20">
+                  Explore verified property projects with transparent details and construction progress.
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="314" height="204" viewBox="0 0 314 204" fill="none" className="absolute bottom-0 left-0">
+                  <path d="M313.758 0H0C5.60838 17.051 8.21257 34.9458 7.69668 52.8874C8.23988 93.1352 24.6362 131.546 53.329 159.788C82.0218 188.03 120.697 203.825 160.966 203.748C201.234 203.67 239.848 187.726 268.432 159.374C297.016 131.022 313.264 92.5484 313.653 52.2988C313.653 52.2988 313.758 49.5241 313.758 0Z" fill="#345EAD"/>
                 </svg>
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-4 z-10">
                   <p className="font-heading font-bold text-xl lg:text-2xl text-center leading-tight mb-4 whitespace-pre-line">
