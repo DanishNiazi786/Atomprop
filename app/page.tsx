@@ -461,9 +461,9 @@ export default function Home() {
             }}
           >
             {/* Wave Flow Container */}
-            <div className="relative w-full flex items-end justify-center" style={{ height: '260px', width: '100%', transform: 'scale(0.80)', transformOrigin: 'center' }}>
+            <div className="relative w-full flex items-center justify-center gap-0" style={{ height: '260px', width: '100%', transform: 'scale(0.80)', transformOrigin: 'center' }}>
               {/* Element 1 - Blue Semi-circle (Down) */}
-              <div className="relative flex-shrink-0" style={{ width: '313.758px', height: '203.748px' }}>
+              <div className="relative flex-shrink-0 self-end" style={{ width: '313.758px', height: '203.748px', marginRight: '-5px', transform: 'translateY(20px)' }}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="313.758" height="203.748" viewBox="0 0 314 206" fill="none" className="absolute bottom-0 left-0">
                   <path d="M152.967 205.201C112.546 205.158 73.781 189.141 45.1259 160.644C16.4708 132.146 0.249766 93.4801 0 53.0765C0 49.6922 0 56.5239 0 0H313.947C308.476 16.8858 305.798 34.5508 306.019 52.2988C305.969 92.8502 289.825 131.725 261.131 160.392C232.436 189.058 193.536 205.173 152.967 205.201Z" fill="#345EAD"/>
                 </svg>
@@ -481,17 +481,9 @@ export default function Home() {
               </div>
 
               {/* Element 2 - Purple Semi-circle (Up) */}
-              <div className="relative flex-shrink-0" style={{ width: '321.602px', height: '202.047px' }}>
+              <div className="relative flex-shrink-0 self-start" style={{ width: '321.602px', height: '202.047px', marginLeft: '-5px', marginRight: '-5px', transform: 'translateY(-20px)' }}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="321.602" height="202.047" viewBox="0 0 322 203" fill="none" className="absolute top-0 left-0">
-                  <path style={{ mixBlendMode: 'multiply' }} opacity="0.5" d="M0 202.047C5.4597 185.157 8.15808 167.497 7.99115 149.748C8.82089 109.816 25.2471 71.7932 53.7576 43.8095C82.2681 15.8258 120.6 0.10209 160.557 0.000495382C200.515 -0.101099 238.926 15.4274 267.579 43.2658C296.231 71.1042 312.851 109.043 313.884 148.97C313.358 166.976 315.969 184.936 321.602 202.047H0Z" fill="url(#paint0_linear_1_1386_2)"/>
-                  <defs>
-                    <linearGradient id="paint0_linear_1_1386_2" x1="-2.09179e-07" y1="99.4251" x2="286.614" y2="109" gradientUnits="userSpaceOnUse">
-                      <stop offset="0.0744296" stopColor="#595858"/>
-                      <stop offset="0.18" stopColor="#932A8E"/>
-                      <stop offset="0.83" stopColor="#932A8E"/>
-                      <stop offset="1" stopColor="#595858"/>
-                    </linearGradient>
-                  </defs>
+                  <path d="M0 202.047C5.4597 185.157 8.15808 167.497 7.99115 149.748C8.82089 109.816 25.2471 71.7932 53.7576 43.8095C82.2681 15.8258 120.6 0.10209 160.557 0.000495382C200.515 -0.101099 238.926 15.4274 267.579 43.2658C296.231 71.1042 312.851 109.043 313.884 148.97C313.358 166.976 315.969 184.936 321.602 202.047H0Z" fill="#7A1F75"/>
                 </svg>
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-4 pt-16 z-10">
                   <p className="font-heading font-bold text-xl lg:text-2xl text-center leading-tight mb-4 whitespace-pre-line">
@@ -507,8 +499,8 @@ export default function Home() {
               </div>
 
               {/* Element 3 - Blue Semi-circle (Down) */}
-              <div className="relative flex-shrink-0" style={{ width: '322px', height: '206px' }}>
-                <p className="absolute -top-16 left-1/2 -translate-x-1/2 font-body text-base lg:text-[18px] text-[rgba(0,0,0,0.8)] text-center capitalize w-[90%] max-w-[350px] leading-[1.8] z-20">
+              <div className="relative flex-shrink-0 self-end" style={{ width: '322px', height: '206px', marginLeft: '-5px', marginRight: '-5px', transform: 'translateY(20px)' }}>
+                <p className="absolute -top-24 left-1/2 -translate-x-1/2 font-body text-base lg:text-[18px] text-[rgba(0,0,0,0.8)] text-center capitalize w-[90%] max-w-[350px] leading-[1.8] z-20">
                   Explore verified property projects with transparent details and construction progress.
                 </p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="322" height="206" viewBox="0 0 322 206" fill="none" className="absolute bottom-0 left-0">
@@ -528,17 +520,9 @@ export default function Home() {
               </div>
 
               {/* Element 4 - Purple Semi-circle (Up) */}
-              <div className="relative flex-shrink-0" style={{ width: '321.602px', height: '202.047px' }}>
+              <div className="relative flex-shrink-0 self-start" style={{ width: '321.602px', height: '202.047px', marginLeft: '-5px', marginRight: '-5px', transform: 'translateY(-20px)' }}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="321.602" height="202.047" viewBox="0 0 322 203" fill="none" className="absolute top-0 left-0">
-                  <path style={{ mixBlendMode: 'multiply' }} opacity="0.5" d="M0 202.047C5.4597 185.157 8.15808 167.497 7.99115 149.748C8.82089 109.816 25.2471 71.7932 53.7576 43.8095C82.2681 15.8258 120.6 0.10209 160.557 0.000495382C200.515 -0.101099 238.926 15.4274 267.579 43.2658C296.231 71.1042 312.851 109.043 313.884 148.97C313.358 166.976 315.969 184.936 321.602 202.047H0Z" fill="url(#paint0_linear_1_1386_4)"/>
-                  <defs>
-                    <linearGradient id="paint0_linear_1_1386_4" x1="-2.09179e-07" y1="99.4251" x2="286.614" y2="109" gradientUnits="userSpaceOnUse">
-                      <stop offset="0.0744296" stopColor="#595858"/>
-                      <stop offset="0.18" stopColor="#932A8E"/>
-                      <stop offset="0.83" stopColor="#932A8E"/>
-                      <stop offset="1" stopColor="#595858"/>
-                    </linearGradient>
-                  </defs>
+                  <path d="M0 202.047C5.4597 185.157 8.15808 167.497 7.99115 149.748C8.82089 109.816 25.2471 71.7932 53.7576 43.8095C82.2681 15.8258 120.6 0.10209 160.557 0.000495382C200.515 -0.101099 238.926 15.4274 267.579 43.2658C296.231 71.1042 312.851 109.043 313.884 148.97C313.358 166.976 315.969 184.936 321.602 202.047H0Z" fill="#7A1F75"/>
                 </svg>
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-4 pt-16 z-10">
                   <p className="font-heading font-bold text-xl lg:text-2xl text-center leading-tight mb-4 whitespace-pre-line">
@@ -554,8 +538,8 @@ export default function Home() {
               </div>
 
               {/* Element 5 - Blue Semi-circle (Down) */}
-              <div className="relative flex-shrink-0" style={{ width: '314px', height: '204px' }}>
-                <p className="absolute -top-16 left-1/2 -translate-x-1/2 font-body text-base lg:text-[18px] text-[rgba(0,0,0,0.8)] text-center capitalize w-[90%] max-w-[350px] leading-[1.8] z-20">
+              <div className="relative flex-shrink-0 self-end" style={{ width: '314px', height: '204px', marginLeft: '-5px', transform: 'translateY(20px)' }}>
+                <p className="absolute -top-24 left-1/2 -translate-x-1/2 font-body text-base lg:text-[18px] text-[rgba(0,0,0,0.8)] text-center capitalize w-[90%] max-w-[350px] leading-[1.8] z-20">
                   Explore verified property projects with transparent details and construction progress.
                 </p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="314" height="204" viewBox="0 0 314 204" fill="none" className="absolute bottom-0 left-0">
